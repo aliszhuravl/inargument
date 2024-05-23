@@ -1816,10 +1816,7 @@ h3 {
 .catalog_box__table_row .more {
 	width: 150px;
 	text-align: right;
-}
-
-.catalog_box__table_row .more a {
-	font-size: 14px;
+	color: #3f53ba;
 }
 
 .in_progress {
