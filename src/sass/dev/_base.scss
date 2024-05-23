@@ -1,0 +1,103 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  background-color: $color-light;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font: $font-normal 16px/1.5 $font-family;
+  letter-spacing: 0.2px;
+  font-weight: normal;
+  font-style: normal;
+  color: $font-color_dark;
+}
+
+a {
+  transition: color, .2s;
+  
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h1 {
+  margin-bottom: 24px;
+  font-size: 64px;
+  margin-top: 0;
+  font-family: $font-family_semibold;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 48px;
+  margin-top: 0;
+  font-family: $font-family_semibold;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+h3 {
+  margin-top: 0;
+  font-weight: normal;
+  font-size: 22px;
+  font-family: $font-family_semibold;
+  margin-bottom: 28px;
+}
+
+.min_h2 {
+  font-size: 40px;
+  font-family: $font-family_semibold;
+  font-weight: normal;
+  margin-bottom: 24px;
+}
+
+.semibold {
+  font-family: $font-family_semibold;
+}
+
+.detail_info {
+  font-family: $font-family_semibold;
+  font-size: 14px;
+}
+
+.price_blue {
+  color: $color-blue;
+  font-family: $font-family_semibold;
+  font-size: 20px;
+}
+
+
+.box-shadow {
+  -webkit-box-shadow: 4px 6px 20px 0px rgba(10,  75,  148, 0.1);
+  -moz-box-shadow: 4px 6px 20px 0px rgba(10,  75,  148, 0.1);
+  box-shadow: 4px 6px 20px 0px rgba(10,  75,  148, 0.1);
+}
+
+.medium {
+  font-family: $font-family_medium;
+}
+
+.simple_p {
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+.base_p {
+  opacity: 0.6;
+  font-size: 16px;
+  margin-bottom: 11px;
+}
+
+.no_bottom {
+  margin-bottom: 0 !important;
+}

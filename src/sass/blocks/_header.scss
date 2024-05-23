@@ -1,0 +1,136 @@
+.header {
+  @extend .layout-padding;
+  background-color: #fff;
+}
+
+.header__inner {
+  @extend .layout-inner;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+
+
+  // ВКЛЮЧИ ВИДИМОСТЬ КОГДА ДОБЕРЕШЬСЯ ДО ПРОФИЛЯ
+  &_profile {
+    display: none;
+    margin-left: 20px;
+    //display: flex;
+    align-items: center;
+      .my_orders {
+        margin-right: 20px;
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+          }
+          span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px;
+            color: #fff;
+            background-color: #F95E71;
+            padding: 0 6px;
+            height: 18px;
+            border-radius: 3px;
+            font-size: 11px;
+          }
+      }
+      .my_lk {
+        a {
+          display: block;
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+            img {
+              width: 100%;
+              height: 100%;
+              display: block;
+              object-fit: contain;
+              border-radius: 50%;
+            }
+        }
+      }
+  }
+
+    &_logo {
+      display: block;
+      margin-right: 20px;
+        img {
+          display: block;
+        }
+    }
+
+      .menu_box {
+        display: flex;
+        align-items: center;
+        .header__inner_menu {
+          padding-right: 20px;
+          border-right: 1px solid $color-border;
+          margin-right: 20px;
+          .burger {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            .hamburger {
+              margin-right: 12px;
+            }
+            p {
+              color: $color-blue;
+            }
+          }
+        }
+
+      }
+
+
+    &_lang {
+      .lang {
+        &_rus {
+          display: flex;
+          align-items: center;
+            img {
+              margin-right: 8px;
+              display: block;
+            }
+        }
+      }
+    }
+    &_enter {
+      display: flex;
+      align-items: center;
+      .btn {
+        &:first-child {
+          margin-right: 14px;
+        }
+      }
+    }
+}
+
+.burger_mobile {
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  .header__inner {
+    .menu_box {
+      display: none;
+    }
+    &_search {
+      display: none;
+    }
+    &_enter {
+      display: none;
+    }
+    .burger_mobile {
+      display: block;
+      .hamburger_active span:before {
+        background-color: #fff;
+      }
+      .hamburger_active span:after {
+        background-color: #fff;
+      }
+    }
+  }
+}

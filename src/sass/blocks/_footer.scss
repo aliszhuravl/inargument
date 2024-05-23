@@ -1,0 +1,109 @@
+.footer {
+  @extend .layout-padding;
+  background-color: #fff;
+}
+
+.footer__inner {
+  @extend .layout-inner;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 40px;
+    &_item {
+      width: 25%;
+      margin-right: 40px;
+      &:first-child {
+        width: 15%;
+      }
+      &:nth-child(2), &:nth-child(3) {
+        width: 30%;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+        p {
+          margin-bottom: 12px;
+          font-size: 14px;
+          font-family: $font-family_semibold;
+        }
+        .list {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+            .link_black {
+              opacity: 0.6;
+              font-size: 14px;
+                &:hover {
+                  color: $color-blue;
+                  opacity: 1;
+                }
+            }
+        }
+    }
+  .non-authorised {
+    display: flex;
+    justify-content: flex-end;
+      .btn {
+        &:first-child {
+          margin-right: 20px;
+        }
+      }
+  }
+}
+
+.footer__bottom {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    p {
+      opacity: 0.4;
+    }
+}
+
+.footer_mobile {
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  .footer__inner {
+    display: none;
+  }
+  .footer_mobile {
+    display: block;
+    padding: 40px 0;
+      .logo-link {
+        margin-bottom: 20px;
+      }
+      .accordion {
+        margin-bottom: 20px;
+        .list {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          .link_black {
+            opacity: 0.6;
+            font-size: 14px;
+            &:hover {
+              color: $color-blue;
+              opacity: 1;
+            }
+          }
+        }
+        .accordion__content {
+          padding-top: 0;
+        }
+      }
+    .non-authorised {
+      display: flex;
+        .btn {
+          &:first-child {
+            margin-right: 20px;
+          }
+        }
+    }
+  }
+}

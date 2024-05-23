@@ -1,0 +1,39 @@
+.link {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  transition: color, .2s;
+  color: $color-blue;
+  font-size: 16px;
+
+    img {
+      margin-left: 8px;
+    }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus,
+  &:active {
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
+
+.link_black {
+  color: $color-black;
+    &:hover {
+      opacity: 0.8;
+    }
+}
+
+.link_arrow {
+  font-size: 18px;
+  font-family: $font-family_medium;
+  .icon-02 {
+    margin-left: 12px;
+    font-size: 12px;
+  }
+}
