@@ -62,7 +62,7 @@
         </div>
     </header>
     <main class="page">
-        <div class="page__inner">
+        <div class="page__inner catalog_inner">
             <section class="page__item">
                 <div class="white_container">
                     <div class="white_container__title">
@@ -76,9 +76,27 @@
                         <h1>Результаты поиска</h1>
                     </div>
 
-                    <div class="catalog__box">
-                        <a href="service.html" class="catalog__box_item"><p>Возражение на судебный приказ</p><span class="icon-02"></span></a>
-                        <a href="service.html" class="catalog__box_item"><p>Заявление о возбуждении ИП</p><span class="icon-02"></span></a>
+                    <div class="page__item_body catalog_body">
+                        <div class="search_box with-btn">
+                            <input type="search" placeholder="Поиск по услугам" class="form__item search">
+                            <button class="btn">Найти услугу</button>
+                        </div>
+                        <div class="catalog__box">
+                            <a href="service.html" class="catalog__box_item"><p>Возражение на судебный приказ</p><span class="icon-02"></span></a>
+                            <a href="service.html" class="catalog__box_item"><p>Заявление о возбуждении ИП</p><span class="icon-02"></span></a>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <div class="left">
+                            <a class="pag pag_active" href="#">1</a>
+                            <a class="pag" href="#">2</a>
+                            <a class="pag" href="#">…</a>
+                            <a class="pag" href="#">12</a>
+                            <a class="pag" href="#">13</a>
+                        </div>
+                        <div class="right">
+                            <p>Результаты 1-12 из 120</p>
+                        </div>
                     </div>
 
                 </div>
@@ -145,7 +163,7 @@
         </div>
     </footer>
     <div class="footer__bottom">
-        <p>2024 © Inargument</p>
+        <a href="#modal_0" rel="modal:open">2024 © Inargument</a>
     </div>
     <div class="menu_wrapper menu_opener">
         <div class="menu_mobile">
@@ -186,6 +204,7 @@
 <script>window.jQuery || document.write('<script src="js/libs/jquery/jquery-3.1.1.min.js"><\/script>')</script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="js/libs/jquery.fancybox/jquery.fancybox.min.js"></script>
+<script src="js/libs/jquery.modal/jquery.modal.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

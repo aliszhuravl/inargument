@@ -8,7 +8,7 @@
 <div class="page-container page-subpage">
     //= html/_header.html
     <main class="page">
-        <div class="page__inner">
+        <div class="page__inner catalog_inner">
             <section class="page__item">
                 <div class="white_container">
                     <div class="white_container__title">
@@ -22,9 +22,27 @@
                         <h1>Результаты поиска</h1>
                     </div>
 
-                    <div class="catalog__box">
-                        <a href="service.html" class="catalog__box_item"><p>Возражение на судебный приказ</p><span class="icon-02"></span></a>
-                        <a href="service.html" class="catalog__box_item"><p>Заявление о возбуждении ИП</p><span class="icon-02"></span></a>
+                    <div class="page__item_body catalog_body">
+                        <div class="search_box with-btn">
+                            <input type="search" placeholder="Поиск по услугам" class="form__item search">
+                            <button class="btn">Найти услугу</button>
+                        </div>
+                        <div class="catalog__box">
+                            <a href="service.html" class="catalog__box_item"><p>Возражение на судебный приказ</p><span class="icon-02"></span></a>
+                            <a href="service.html" class="catalog__box_item"><p>Заявление о возбуждении ИП</p><span class="icon-02"></span></a>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <div class="left">
+                            <a class="pag pag_active" href="#">1</a>
+                            <a class="pag" href="#">2</a>
+                            <a class="pag" href="#">...</a>
+                            <a class="pag" href="#">12</a>
+                            <a class="pag" href="#">13</a>
+                        </div>
+                        <div class="right">
+                            <p>Результаты 1-12 из 120</p>
+                        </div>
                     </div>
 
                 </div>

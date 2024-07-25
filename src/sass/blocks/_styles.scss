@@ -175,14 +175,24 @@
   width: 100%;
     .inline-label {
       p {
-        font-size: 11px;
+        font-size: 13px;
       }
       a {
-        font-size: 11px;
+        font-size: 13px;
         text-decoration: underline;
           &:hover {
             text-decoration: none;
           }
+      }
+    }
+}
+
+.centered_group_box .enter_box__agr .agreement.agr_spoiler {
+  max-width: 100%;
+    .accordion {
+      margin-bottom: 20px;
+      .accordion__item_open .accordion__content {
+        padding: 0;
       }
     }
 }
@@ -301,6 +311,69 @@
   }
 }
 
+.with-btn {
+  display: flex;
+  align-items: center;
+    .search {
+      margin-right: 20px;
+    }
+}
+
+.pagination {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .left {
+    display: flex;
+    align-items: center;
+    .pag {
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background-color: #e9f1fa;
+      border-radius: 50%;
+      color: $color-blue;
+      text-decoration: none;
+        &:hover {
+          background-color: $color-blue;
+          color: #fff;
+        }
+    }
+    .pag_active {
+      background-color: $color-blue;
+      color: #fff;
+    }
+  }
+}
+
+.rekvisit {
+  width: 100%;
+  &_line {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+    margin-bottom: 16px;
+    border-bottom: 1px solid $color-border;
+      .rl_text {
+        width: 50%;
+        text-align: left;
+      }
+  }
+}
+
+.form_sms {
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+
 @media (max-width: 1199px) {
   .reg_box {
     min-width: unset;
@@ -312,7 +385,6 @@
   .enter_box__title, .enter_box__agr, .enter_box__btns {
     padding: 20px 24px;
   }
-
 }
 
 @media (max-width: 640px) {
@@ -352,4 +424,48 @@
   .enter_box {
     min-width: 100%;
   }
+
+  .catalog_inner .catalog_body .search_box {
+    margin-bottom: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+      .search {
+        margin-bottom: 16px;
+        margin-right: 0;
+      }
+      .btn {
+        width: 100%;
+      }
+  }
+
+  .pagination {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+      .right {
+        margin-right: 0;
+        margin-bottom: 16px;
+      }
+  }
+
+  .rekvisit {
+    width: 100%;
+      .rekvisit_line {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        p.text_bold {
+          margin-bottom: 12px;
+        }
+        .rl_text {
+          width: 100%;
+        }
+      }
+  }
+
+  .agr_spoiler {
+    .accordion__text {
+      max-width: 85%;
+    }
+  }
+
 }
