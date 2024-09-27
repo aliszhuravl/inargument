@@ -364,6 +364,10 @@
       .rl_text {
         width: 50%;
         text-align: left;
+        opacity: 0.7;
+      }
+      .text_bold {
+        font-family: $font-family_semibold;
       }
   }
 }

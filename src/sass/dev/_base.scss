@@ -76,7 +76,6 @@ h3 {
   font-size: 20px;
 }
 
-
 .box-shadow {
   -webkit-box-shadow: 4px 6px 20px 0px rgba(10,  75,  148, 0.1);
   -moz-box-shadow: 4px 6px 20px 0px rgba(10,  75,  148, 0.1);
@@ -85,6 +84,11 @@ h3 {
 
 .medium {
   font-family: $font-family_medium;
+}
+
+.text_mini {
+  font-size: 13px;
+  opacity: 0.6;
 }
 
 .simple_p {
