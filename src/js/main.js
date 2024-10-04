@@ -8,3 +8,5 @@
 //= parts/_accordion.js
 //= parts/_hamburger.js
 //= parts/_fancybox.js
+//= parts/_things.js
+//= parts/_sticky.js

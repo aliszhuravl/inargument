@@ -264,3 +264,19 @@ function onYouTubePlayerAPIReady() {
     });
 
 }
+(function($) {
+    $('.btn_show').on('click', function () {
+        $('.hidden_content').toggleClass('hidden');
+        $('.btn_show').addClass('hidden');
+    });
+})(jQuery);
+(function($) {
+
+    $('.sticky').hcSticky({
+        top: 120,
+        bottomEnd: 40,
+        className: 'is-sticky',
+        wrapperClassName: 'wrapper-sticky'
+    });
+
+})(jQuery);

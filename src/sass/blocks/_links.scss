@@ -21,6 +21,13 @@
   }
 }
 
+.link_white {
+  color: #fff;
+  text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+}
 
 .link_black {
   color: $color-black;
