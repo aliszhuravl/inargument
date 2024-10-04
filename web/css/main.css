@@ -3741,19 +3741,19 @@ h3 {
 	color: #3f53ba;
 }
 
-.member_position {
+.hero_member .member_position {
 	display: flex;
 	margin-bottom: 40px;
 	align-items: center;
 	justify-content: flex-start;
 }
 
-.member_position .text_mini {
+.hero_member .member_position .text_mini {
 	font-size: 20px;
 	color: #fff;
 }
 
-.member_position span {
+.hero_member .member_position span {
 	width: 6px;
 	height: 6px;
 	margin: 0 8px;
