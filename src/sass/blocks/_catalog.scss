@@ -57,6 +57,7 @@
         width: 150px;
         text-align: right;
         opacity: 0;
+
       }
     }
     &_row {
@@ -78,6 +79,11 @@
         }
         .row_name {
           width: 300px;
+          color: $color-blue;
+          text-decoration: none;
+            &:hover {
+              color: $color-black;
+            }
         }
         .row_date {
           width: 200px;
@@ -89,8 +95,75 @@
           width: 150px;
           text-align: right;
           color: $color-blue;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          position: relative;
         }
+      &:hover {
+        opacity: 1;
+      }
     }
+}
+
+.more_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  span {
+    content: '';
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    background-color: $color-blue;
+    margin-right: 3px;
+      &:last-child {
+        margin-right: 0;
+      }
+  }
+}
+
+.more_menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 2;
+  @extend .box-shadow;
+  border-radius: 12px;
+  overflow-x: hidden;
+
+    &__item {
+      padding: 8px 24px;
+      border-bottom: 1px solid $color-border;
+      color: $color-blue;
+      text-decoration: none;
+      width: 100%;
+      text-align: left;
+        p.red {
+          color: #f95e71;
+        }
+        &:last-child {
+          border-bottom: none;
+        }
+
+      cursor: pointer;
+      &:hover {
+        background-color: $color-blue;
+        color: #fff;
+          p.red {
+            color: #fff;
+          }
+      }
+    }
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .in_progress {

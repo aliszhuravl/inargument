@@ -567,6 +567,7 @@ h3 {
 .pay_tile__item:hover,
 .form_box__container .hint_box .hint,
 .white_container,
+.more_menu,
 .catalog_box__table_row,
 .file_disabled .hint,
 .enter_box {
@@ -1908,6 +1909,12 @@ h3 {
 
 .catalog_box__table_row .row_name {
 	width: 300px;
+	text-decoration: none;
+	color: #3f53ba;
+}
+
+.catalog_box__table_row .row_name:hover {
+	color: #363636;
 }
 
 .catalog_box__table_row .row_date {
@@ -1919,9 +1926,82 @@ h3 {
 }
 
 .catalog_box__table_row .more {
+	position: relative;
+	display: flex;
 	width: 150px;
 	text-align: right;
 	color: #3f53ba;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.catalog_box__table_row:hover {
+	opacity: 1;
+}
+
+.more_btn {
+	display: flex;
+	border: none;
+	background-color: transparent;
+	align-items: center;
+	justify-content: center;
+}
+
+.more_btn span {
+	width: 4px;
+	height: 4px;
+	margin-right: 3px;
+	content: '';
+	border-radius: 50%;
+	background-color: #3f53ba;
+}
+
+.more_btn span:last-child {
+	margin-right: 0;
+}
+
+.more_menu {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	display: flex;
+	overflow-x: hidden;
+	flex-direction: column;
+	border-radius: 12px;
+	background-color: #fff;
+	align-items: flex-start;
+}
+
+.more_menu__item {
+	width: 100%;
+	padding: 8px 24px;
+	cursor: pointer;
+	text-align: left;
+	text-decoration: none;
+	color: #3f53ba;
+	border-bottom: 1px solid #d9ddf1;
+}
+
+.more_menu__item p.red {
+	color: #f95e71;
+}
+
+.more_menu__item:last-child {
+	border-bottom: none;
+}
+
+.more_menu__item:hover {
+	color: #fff;
+	background-color: #3f53ba;
+}
+
+.more_menu__item:hover p.red {
+	color: #fff;
+}
+
+.more_menu:hover {
+	opacity: 1;
 }
 
 .in_progress {
