@@ -110,3 +110,7 @@ h3 {
   font-size: 16px;
   font-family: $font-family_medium;
 }
+
+.long_inner_title {
+  @extend h3;
+}

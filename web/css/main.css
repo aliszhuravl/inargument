@@ -533,7 +533,9 @@ h2 {
 	margin-bottom: 20px;
 }
 
-h3 {
+h3,
+.white_container h2,
+.long_inner_title {
 	font-family: 'InvolveSemibold', 'Arial', serif;
 	font-size: 22px;
 	font-weight: normal;
@@ -782,6 +784,26 @@ h3 {
 
 .page__item_title h2 {
 	margin-bottom: 0;
+}
+
+.sub_block {
+	padding-top: 0;
+}
+
+.sub_block .team_box__item {
+	padding-left: 0;
+}
+
+.sub_block .team_box__item .member_name {
+	font-size: 18px;
+}
+
+.sub_block .team_box__item:first-child {
+	border-top: 1px solid #d9ddf1;
+}
+
+.pit_mini {
+	margin-bottom: 20px;
 }
 
 .about_text {
@@ -2111,9 +2133,14 @@ h3 {
 
 .white_container {
 	width: 100%;
+	margin-bottom: 32px;
 	padding: 40px;
 	border-radius: 12px;
 	background-color: #fff;
+}
+
+.white_container:last-child {
+	margin-bottom: 0;
 }
 
 .white_container .bc {
@@ -2133,7 +2160,60 @@ h3 {
 	font-family: 'InvolveSemibold', 'Arial', serif;
 	font-size: 40px;
 	font-weight: normal;
+	line-height: 46px;
 	margin-bottom: 24px;
+}
+
+.white_container .video_block video {
+	overflow: hidden;
+	border-radius: 24px;
+}
+
+.white_container .law_links {
+	display: flex;
+	flex-direction: column;
+}
+
+.white_container .law_links a.link,
+.white_container .law_links a.nav__link {
+	font-family: 'InvolveSemibold', 'Arial', serif;
+	font-size: 16px;
+	margin-bottom: 8px;
+}
+
+.white_container .law_links a.link:last-child,
+.white_container .law_links a.nav__link:last-child {
+	margin-bottom: 0;
+}
+
+.white_container .wk_main_textblock {
+	font-family: 'InvolveMedium', 'Arial', serif;
+	max-width: 940px;
+}
+
+.white_container .wk_textblock {
+	max-width: 940px;
+	opacity: .6;
+}
+
+.white_container ol {
+	max-width: 940px;
+	margin-left: 0;
+	padding-left: 20px;
+}
+
+.white_container ol li {
+	font-size: 16px;
+	margin-bottom: 8px;
+	opacity: .6;
+}
+
+.white_container ol li:last-child {
+	margin-bottom: 0;
+}
+
+.white_container .about_text {
+	margin-bottom: 20px;
 }
 
 .white_container .about_text__left p {
@@ -2154,6 +2234,79 @@ h3 {
 	background-color: #3f53ba;
 }
 
+.white_container .person_text {
+	display: flex;
+	padding: 24px 0 32px 0;
+	border-bottom: 1px solid #d9ddf1;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.white_container .person_text_id {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.white_container .person_text_id .person_photo {
+	overflow: hidden;
+	width: 60px;
+	height: 60px;
+	margin-right: 20px;
+	border-radius: 50%;
+}
+
+.white_container .person_text_id .person_photo img {
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.white_container .person_text_id .person_info {
+	margin-right: 60px;
+}
+
+.white_container .person_text_id .person_info .member_name {
+	font-family: 'InvolveSemibold', 'Arial', serif;
+	font-size: 14px;
+	margin-bottom: 3px;
+	text-decoration: none;
+	color: #363636;
+}
+
+.white_container .person_text_id .person_info .member_position {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.white_container .person_text_id .person_info .member_position .text_mini {
+	font-size: 13px;
+}
+
+.white_container .person_text_id .person_info .member_position span {
+	width: 6px;
+	height: 6px;
+	margin: 0 8px;
+	content: '';
+	opacity: .3;
+	border-radius: 50%;
+	background-color: #363636;
+}
+
+.white_container .person_text_quote {
+	font-family: 'Involve', 'Arial', serif;
+	display: block;
+	max-width: 720px;
+	padding: 8px 0 8px 20px;
+	border-left: 3px solid #3f53ba;
+}
+
+.white_container .person_text_quote q {
+	opacity: .6;
+}
+
 .white_container .action_box {
 	display: flex;
 	width: 100%;
@@ -2162,6 +2315,17 @@ h3 {
 	border-bottom: 1px solid #d9ddf1;
 	align-items: flex-end;
 	justify-content: space-between;
+}
+
+.white_container .action_box .right {
+	display: flex;
+	align-items: center;
+}
+
+.white_container .action_box .right p {
+	font-family: 'InvolveSemibold', 'Arial', serif;
+	font-size: 14px;
+	margin-right: 24px;
 }
 
 .white_container .descr_box {
@@ -3127,6 +3291,33 @@ h3 {
 	text-overflow: ellipsis;
 }
 
+.faq_accordion .accordion__btn {
+	height: 48px;
+	margin-bottom: 12px;
+	padding: 5px 20px;
+	cursor: pointer;
+	color: #363636;
+	border-radius: 12px;
+	background-color: rgba(220, 231, 247, .45);
+}
+
+.faq_accordion .accordion__btn .accordion__text {
+	font-family: 'Involve', 'Arial', serif;
+	overflow: hidden;
+	max-width: 260px;
+	padding-left: 20px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.faq_accordion .accordion__btn:last-child {
+	margin-bottom: 0;
+}
+
+.faq_accordion .accordion__btn:hover .accordion__text {
+	color: #3f53ba;
+}
+
 /*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
 
 .fancybox-wrap,
@@ -4054,7 +4245,10 @@ h3 {
 	margin-bottom: 20px;
 }
 
-.law_text h3 {
+.law_text h3,
+.law_text .long_inner_title,
+.law_text .white_container h2,
+.white_container .law_text h2 {
 	font-size: 18px;
 	line-height: normal;
 	margin-bottom: 16px;
@@ -4499,6 +4693,39 @@ h2 {
 	order: 5;
 }
 
+.white_container .action_box {
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.white_container .action_box .left {
+	margin-bottom: 20px;
+}
+
+.white_container .action_box .right {
+	width: 100%;
+	justify-content: space-between;
+}
+
+.white_container .person_text {
+	flex-direction: column-reverse;
+	align-items: flex-start;
+}
+
+.white_container .person_text_quote {
+	margin-bottom: 20px;
+}
+
+.long_inner_title {
+	line-height: 26px;
+	max-width: 60%;
+}
+
+.pit_mini {
+	align-items: flex-end;
+}
+
 .white_container h1 {
 	font-size: 26px;
 	line-height: 30px;
@@ -4859,6 +5086,8 @@ h2 {
 
 .white_container .action_box {
 	flex-direction: column;
+	margin-bottom: 20px;
+	padding: 16px 0;
 	align-items: flex-start;
 	justify-content: flex-start;
 }
@@ -4910,7 +5139,9 @@ h2 {
 	font-size: 14px;
 }
 
-h3 {
+h3,
+.long_inner_title,
+.white_container h2 {
 	font-size: 18px;
 	line-height: 22px;
 	margin-bottom: 20px;
@@ -4919,6 +5150,74 @@ h3 {
 .min_h2 {
 	font-size: 24px;
 	line-height: 28px;
+}
+
+.white_container .action_box .left {
+	margin-bottom: 0;
+}
+
+.white_container .action_box .right {
+	flex-direction: column-reverse;
+	align-items: flex-start;
+}
+
+.white_container .action_box .right .btn {
+	width: 100%;
+	margin-bottom: 12px;
+}
+
+.white_container .person_text {
+	padding: 16px 0 16px 0;
+}
+
+.person_text_quote q {
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.white_container .wk_main_textblock,
+.white_container .wk_textblock {
+	font-size: 14px;
+}
+
+.white_container ol li {
+	font-size: 14px;
+}
+
+.pit_mini h2 {
+	max-width: 100%;
+}
+
+.page__item.sub_block {
+	padding-top: 0;
+}
+
+.white_container .video_block video {
+	border-radius: 12px;
+}
+
+.white_container .tile__item p {
+	font-size: 14px;
+}
+
+.catalog__box_item p,
+.faq_accordion .accordion__btn .accordion__text {
+	font-size: 14px;
+}
+
+.sub_block .team_box__item .member_name {
+	font-size: 16px;
+}
+
+.white_container .descr_box .tile__item {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.white_container .descr_box .tile__item img {
+	margin-right: 12px;
+	margin-bottom: 0;
 }
 
 .tile_title {
@@ -5123,6 +5422,14 @@ h3 {
 	right: 6px;
 }
 
+.faq_accordion .accordion__btn:before {
+	right: 26px;
+}
+
+.faq_accordion .accordion__btn:after {
+	right: 20px;
+}
+
 .popup {
 	width: 90%;
 	max-width: 90%;
@@ -5274,6 +5581,18 @@ h3 {
 	width: 100%;
 }
 
+.team_box__item:after {
+	display: none;
+}
+
+.team_box__item_main_info .member_position {
+	margin-bottom: 8px;
+}
+
+.team_box__item_main_info .member_contacts {
+	padding-bottom: 0;
+}
+
 .h1_law {
 	font-size: 18px;
 	margin-bottom: 0;
@@ -5302,7 +5621,10 @@ h3 {
 	font-size: 18px;
 }
 
-.law_text h3 {
+.law_text h3,
+.law_text .long_inner_title,
+.law_text .white_container h2,
+.white_container .law_text h2 {
 	font-size: 16px;
 }
 

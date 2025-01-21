@@ -422,4 +422,16 @@
     }
   }
 
+  .team_box__item:after {
+    display: none;
+  }
+
+  .team_box__item_main_info .member_position {
+    margin-bottom: 8px;
+  }
+
+  .team_box__item_main_info .member_contacts {
+    padding-bottom: 0;
+  }
+
 }

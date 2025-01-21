@@ -39,6 +39,25 @@
     }
 }
 
+.sub_block {
+  padding-top: 0;
+    .team_box {
+      &__item {
+        padding-left: 0;
+          .member_name {
+            font-size: 18px;
+          }
+        &:first-child {
+          border-top: 1px solid $color-border;
+        }
+      }
+    }
+}
+
+.pit_mini {
+  margin-bottom: 20px;
+}
+
 .about_text {
   display: flex;
   align-items: flex-start;

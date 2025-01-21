@@ -1,9 +1,13 @@
 .white_container {
+  margin-bottom: 32px;
   @extend .box-shadow;
   background-color: #fff;
   border-radius: 12px;
   padding: 40px;
   width: 100%;
+    &:last-child {
+      margin-bottom: 0;
+    }
     .bc {
       padding-top: 0;
       margin-bottom: 24px;
@@ -19,9 +23,57 @@
         font-family: $font-family_semibold;
         font-weight: normal;
         margin-bottom: 24px;
+        line-height: 46px;
       }
 
+  h2 {
+    @extend h3;
+  }
+
+  .video_block video {
+    border-radius: 24px;
+    overflow: hidden;
+  }
+
+  .law_links {
+    display: flex;
+    flex-direction: column;
+    a.link {
+      font-family: $font-family_semibold;
+      margin-bottom: 8px;
+      font-size: 16px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+    }
+  }
+
+  .wk_main_textblock {
+    max-width: 940px;
+    font-family: $font-family_medium;
+  }
+
+  .wk_textblock {
+    max-width: 940px;
+    opacity: 0.6;
+  }
+
+  ol {
+    max-width: 940px;
+    margin-left: 0;
+    padding-left: 20px;
+    li {
+      opacity: 0.6;
+      font-size: 16px;
+      margin-bottom: 8px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+    }
+  }
+
     .about_text {
+      margin-bottom: 20px;
       &__left {
         p {
           font-family: $font-family;
@@ -45,6 +97,68 @@
       }
     }
 
+  .person_text {
+    padding: 24px 0 32px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid $color-border;
+      &_id {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .person_photo {
+          margin-right: 20px;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          overflow: hidden;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+        }
+        .person_info {
+          margin-right: 60px;
+          .member_name {
+            font-size: 14px;
+            font-family: $font-family_semibold;
+            margin-bottom: 3px;
+            color: $color-black;
+            text-decoration: none;
+          }
+          .member_position {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            .text_mini {
+              font-size: 13px;
+            }
+            span {
+              content: '';
+              opacity: .3;
+              background-color: $color-black;
+              width: 6px;
+              height: 6px;
+              border-radius: 50%;
+              margin: 0 8px;
+            }
+          }
+        }
+      }
+      &_quote {
+        padding: 8px 0 8px 20px;
+        border-left: 3px solid $color-blue;
+        display: block;
+        font-family: $font-family;
+        max-width: 720px;
+          q {
+            opacity: .6;
+          }
+      }
+  }
+
     .action_box {
       display: flex;
       align-items: flex-end;
@@ -53,6 +167,15 @@
       padding: 32px 0;
       border-bottom: 1px solid $color-border;
       margin-bottom: 40px;
+        .right {
+          display: flex;
+          align-items: center;
+            p {
+              font-size: 14px;
+              font-family: $font-family_semibold;
+              margin-right: 24px;
+            }
+        }
     }
 
   .descr_box {
@@ -132,6 +255,37 @@
 }
 
 @media (max-width: 1199px) {
+  .white_container .action_box {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+      .left {
+        margin-bottom: 20px;
+      }
+      .right {
+        justify-content: space-between;
+        width: 100%;
+      }
+  }
+
+  .white_container .person_text {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .white_container .person_text_quote {
+    margin-bottom: 20px;
+  }
+
+  .long_inner_title {
+    max-width: 60%;
+    line-height: 26px;
+  }
+
+  .pit_mini {
+    align-items: flex-end;
+  }
+
   .white_container h1 {
     font-size: 26px;
     line-height: 30px;
@@ -140,6 +294,7 @@
 }
 
 @media (max-width: 640px) {
+
 
   .white_container {
     padding: 16px;
@@ -155,6 +310,8 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
+      margin-bottom: 20px;
+      padding: 16px 0;
       .left .price {
         margin-bottom: 12px;
         flex-direction: column;
@@ -205,6 +362,72 @@
   .min_h2 {
     font-size: 24px;
     line-height: 28px;
+  }
+
+  .white_container .action_box .left {
+    margin-bottom: 0;
+  }
+
+  .white_container .action_box .right {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+      .btn {
+        width: 100%;
+        margin-bottom: 12px;
+      }
+  }
+
+  .white_container .person_text {
+    padding: 16px 0 16px 0;
+  }
+
+  .person_text_quote {
+    q {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  .white_container .wk_main_textblock, .white_container .wk_textblock {
+    font-size: 14px;
+  }
+  .white_container ol li {
+    font-size: 14px;
+  }
+
+  .pit_mini {
+    h2 {
+      max-width: 100%;
+    }
+  }
+
+  .page__item.sub_block {
+    padding-top: 0;
+  }
+
+  .white_container .video_block video {
+    border-radius: 12px;
+  }
+  .white_container .tile__item p {
+    font-size: 14px;
+  }
+  .catalog__box_item p, .faq_accordion .accordion__btn .accordion__text {
+    font-size: 14px;
+  }
+  .sub_block .team_box__item .member_name {
+    font-size: 16px;
+  }
+  .white_container .descr_box {
+
+    .tile__item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      img {
+        margin-bottom: 0;
+        margin-right: 12px;
+      }
+    }
   }
 
 }

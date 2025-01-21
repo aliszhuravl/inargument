@@ -106,11 +106,48 @@
   position: absolute;
 }
 
+
+.faq_accordion {
+  .accordion__btn {
+    height: 48px;
+    margin-bottom: 12px;
+    background-color: rgba(220, 231, 247, .45);
+    color: $color-black;
+    padding: 5px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+      .accordion__text {
+        font-family: $font-family;
+        padding-left: 20px;
+        overflow: hidden;
+        max-width: 260px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &:hover {
+        .accordion__text {
+          color: $color-blue;
+        }
+      }
+  }
+}
+
 @media (max-width: 640px) {
   .accordion__btn:before {
     right: 12px;
   }
   .accordion__btn:after {
     right: 6px;
+  }
+  .faq_accordion {
+    .accordion__btn:before {
+      right: 26px;
+    }
+    .accordion__btn:after {
+      right: 20px;
+    }
   }
 }
