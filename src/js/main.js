@@ -10,3 +10,4 @@
 //= parts/_fancybox.js
 //= parts/_things.js
 //= parts/_sticky.js
+//= parts/_show.js

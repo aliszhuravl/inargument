@@ -2161,6 +2161,7 @@ h3,
 	font-size: 40px;
 	font-weight: normal;
 	line-height: 46px;
+	max-width: 80%;
 	margin-bottom: 24px;
 }
 
@@ -2232,6 +2233,67 @@ h3,
 
 .white_container .serv_cat .catalog__box_item:hover {
 	background-color: #3f53ba;
+}
+
+.white_container .list {
+	margin: 20px 0 40px 0;
+	padding-left: 25px;
+	list-style-type: none;
+}
+
+.white_container .list li {
+	position: relative;
+	margin-bottom: 8px;
+}
+
+.white_container .list li p {
+	font-family: 'InvolveMedium', 'Arial', serif;
+	font-size: 16px;
+	color: #363636;
+}
+
+.white_container .list li:before {
+	position: absolute;
+	top: 6px;
+	left: -25px;
+	width: 6px;
+	height: 6px;
+	margin: 0 16px 0 0;
+	content: '';
+	background-color: #3f53ba;
+}
+
+.white_container .checkbox__table .form__checkbox {
+	display: flex;
+	width: 100%;
+	margin-bottom: 0;
+	padding-right: 40px;
+	padding-left: 0;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.white_container .checkbox__table .form__checkbox .name_price {
+	display: flex;
+	width: 95%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.white_container .checkbox__table .form__checkbox .name_price p {
+	font-size: 16px;
+}
+
+.white_container .checkbox__table .form__checkbox .form__checkbox_indicator {
+	top: 4px;
+	right: 0;
+	left: auto;
+	margin-bottom: 0;
+}
+
+.white_container .checkbox__table .catalog__box_item:hover {
+	color: #3f53ba;
+	background-color: transparent;
 }
 
 .white_container .person_text {
@@ -2408,6 +2470,26 @@ h3,
 
 .price_detail:last-child {
 	margin-right: 0;
+}
+
+.hidden_point {
+	display: none !important;
+}
+
+.with-hidden {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.with-hidden:before {
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 30%;
+	content: '';
+	background: linear-gradient(0deg, rgb(244, 249, 255) 0%, rgba(244, 249, 255, 0) 60%);
 }
 
 .process_group {
@@ -3304,7 +3386,7 @@ h3,
 .faq_accordion .accordion__btn .accordion__text {
 	font-family: 'Involve', 'Arial', serif;
 	overflow: hidden;
-	max-width: 260px;
+	max-width: 90%;
 	padding-left: 20px;
 	white-space: nowrap;
 	text-overflow: ellipsis;
@@ -4732,6 +4814,34 @@ h2 {
 	margin-bottom: 20px;
 }
 
+.white_container .checkbox__table .form__checkbox .name_price {
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.white_container .checkbox__table .form__checkbox .name_price p:first-child {
+	margin-bottom: 4px;
+}
+
+.white_container .checkbox__table .form__checkbox .form__checkbox_indicator {
+	top: 10px;
+}
+
+.big_service_tile {
+	margin-bottom: 0;
+}
+
+.big_service_tile .tile__item {
+	width: 50%;
+	margin-bottom: 32px;
+}
+
+.big_service_tile .tile__item:nth-child(3),
+.big_service_tile .tile__item:nth-child(4) {
+	margin-bottom: 0;
+}
+
 .enter_box__body_container .left {
 	margin-right: 40px;
 }
@@ -5068,6 +5178,24 @@ h2 {
 	max-width: 260px;
 	white-space: nowrap;
 	text-overflow: ellipsis;
+}
+
+.checkbox__table .catalog__box_item {
+	padding: 5px 12px;
+}
+
+.checkbox__table .catalog__box_item p {
+	font-size: 14px !important;
+	white-space: unset;
+}
+
+.big_service_tile .tile__item {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.big_service_tile .tile__item:nth-child(3) {
+	margin-bottom: 20px;
 }
 
 .white_container {
@@ -5420,6 +5548,10 @@ h3,
 
 .accordion__btn:after {
 	right: 6px;
+}
+
+.faq_accordion .accordion__text {
+	max-width: 260px;
 }
 
 .faq_accordion .accordion__btn:before {

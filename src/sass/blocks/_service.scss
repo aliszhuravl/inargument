@@ -24,6 +24,7 @@
         font-weight: normal;
         margin-bottom: 24px;
         line-height: 46px;
+        max-width: 80%;
       }
 
   h2 {
@@ -96,6 +97,64 @@
         }
       }
     }
+
+  .list {
+    margin: 20px 0 40px 0;
+    padding-left: 25px;
+    list-style-type: none;
+    li {
+      margin-bottom: 8px;
+      position: relative;
+      p {
+        font-size: 16px;
+        color: $color-black;
+        font-family: $font-family_medium;
+      }
+      &:before {
+        width: 6px;
+        height: 6px;
+        background-color: $color-blue;
+        content: '';
+        margin: 0 16px 0 0;
+        position: absolute;
+        left: -25px;
+        top: 6px;
+      }
+    }
+  }
+
+  .checkbox__table {
+    .form__checkbox {
+      margin-bottom: 0;
+      padding-left: 0;
+      padding-right: 40px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+        .name_price {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 95%;
+          p {
+            font-size: 16px;
+          }
+        }
+      .form__checkbox_indicator {
+        right: 0;
+        left: auto;
+        top: 4px;
+        margin-bottom: 0;
+      }
+    }
+    .catalog__box_item {
+      &:hover {
+        background-color: transparent;
+        color: $color-blue;
+      }
+    }
+  }
 
   .person_text {
     padding: 24px 0 32px 0;
@@ -254,6 +313,27 @@
   }
 }
 
+//стили спрятанных пунктов
+
+.hidden_point {
+  display: none !important;
+}
+
+.with-hidden {
+  position: relative;
+  margin-bottom: 20px;
+  &:before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 30%;
+    z-index: 2;
+    background: linear-gradient(0deg, rgba(244,249,255,1) 0%, rgba(244,249,255,0) 60%);
+  }
+}
+
 @media (max-width: 1199px) {
   .white_container .action_box {
     flex-direction: column;
@@ -291,10 +371,49 @@
     line-height: 30px;
     margin-bottom: 20px;
   }
+  .white_container .checkbox__table .form__checkbox .name_price {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+      p:first-child {
+        margin-bottom: 4px;
+      }
+  }
+  .white_container .checkbox__table .form__checkbox .form__checkbox_indicator {
+    top: 10px;
+  }
+
+  .big_service_tile {
+    margin-bottom: 0;
+    .tile__item {
+      width: 50%;
+      margin-bottom: 32px;
+        &:nth-child(3), &:nth-child(4) {
+          margin-bottom: 0;
+        }
+    }
+  }
 }
 
 @media (max-width: 640px) {
 
+  .checkbox__table {
+    .catalog__box_item {
+      padding: 5px 12px;
+      p {
+        white-space: unset;
+        font-size: 14px !important;
+      }
+    }
+  }
+
+  .big_service_tile .tile__item {
+    width: 100%;
+    margin-bottom: 20px;
+    &:nth-child(3) {
+      margin-bottom: 20px;
+    }
+  }
 
   .white_container {
     padding: 16px;

@@ -120,7 +120,7 @@
         font-family: $font-family;
         padding-left: 20px;
         overflow: hidden;
-        max-width: 260px;
+        max-width: 90%;
         white-space: nowrap;
         text-overflow: ellipsis;
       }
@@ -143,6 +143,9 @@
     right: 6px;
   }
   .faq_accordion {
+    .accordion__text {
+      max-width: 260px;
+    }
     .accordion__btn:before {
       right: 26px;
     }
