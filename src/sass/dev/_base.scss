@@ -114,3 +114,8 @@ h3 {
 .long_inner_title {
   @extend h3;
 }
+
+.last-block {
+  margin-bottom: 0 !important;
+  padding-bottom: 0;
+}

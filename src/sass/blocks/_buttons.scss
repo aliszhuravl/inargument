@@ -54,6 +54,20 @@
     }
 }
 
+.btn_transparent {
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  padding: 4px;
+  height: auto;
+    img {
+      display: block;
+    }
+    &:hover {
+      opacity: .5;
+    }
+}
+
 .btn_img {
   img {
     margin-left: 12px;
