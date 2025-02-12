@@ -55,8 +55,19 @@
 }
 
 .icon-01:before {
-  content: "\e900";
+  content: "\e903";
 }
 .icon-02:before {
   content: "\e901";
 }
+
+.icon-doc:before {
+  content: "\e904";
+  color: #3f53ba;
+}
+
+.icon-instr:before {
+  content: "\e906";
+  color: #3f53ba;
+}
+

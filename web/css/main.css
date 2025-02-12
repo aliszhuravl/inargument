@@ -478,11 +478,21 @@ th {
 }
 
 .icon-01:before {
-	content: '\e900';
+	content: '\e903';
 }
 
 .icon-02:before {
 	content: '\e901';
+}
+
+.icon-doc:before {
+	content: '\e904';
+	color: #3f53ba;
+}
+
+.icon-instr:before {
+	content: '\e906';
+	color: #3f53ba;
 }
 
 *,
@@ -1110,6 +1120,17 @@ h3,
 .link_arrow .icon-02 {
 	font-size: 12px;
 	margin-left: 12px;
+}
+
+.non_active {
+	cursor: default;
+	text-decoration: none;
+	opacity: .6;
+	color: #363636 !important;
+}
+
+.non_active:hover {
+	color: #363636;
 }
 
 .layout-inner,
@@ -1925,6 +1946,11 @@ h3,
 	width: 150px;
 }
 
+.catalog_box__table_top .download {
+	width: 120px;
+	opacity: 0;
+}
+
 .catalog_box__table_top .more {
 	width: 150px;
 	text-align: right;
@@ -1985,6 +2011,7 @@ h3,
 
 .more_btn {
 	display: flex;
+	padding: 10px 0;
 	border: none;
 	background-color: transparent;
 	align-items: center;
@@ -2067,7 +2094,7 @@ h3,
 	padding: 4px 12px;
 	color: #fff;
 	border-radius: 6px;
-	background-color: #f95e71;
+	background-color: #747880;
 	align-items: center;
 	justify-content: center;
 }
@@ -4653,6 +4680,51 @@ h3,
 	white-space: nowrap;
 }
 
+.row_topay .to-pay-block {
+	font-size: 14px;
+	width: 120px;
+	text-decoration: underline;
+	color: #f95e71;
+}
+
+.row_cancelled .my-order_actions {
+	visibility: hidden;
+}
+
+.my-order_actions {
+	display: flex;
+	width: 120px;
+	align-items: center;
+}
+
+.my-order_actions .mo_action {
+	margin-right: 20px;
+}
+
+.my-order_actions .mo_action span {
+	font-size: 20px;
+}
+
+.my-order_actions .mo_action span:before {
+	color: #3f53ba;
+}
+
+.my-order_actions .mo_action:last-child {
+	margin-right: 0;
+}
+
+.wait-payment {
+	font-size: 11px;
+	display: flex;
+	width: 100px;
+	padding: 4px 12px;
+	color: #fff;
+	border-radius: 6px;
+	background-color: #f95e71;
+	align-items: center;
+	justify-content: center;
+}
+
 .clearfix:before,
 .clearfix:after {
 	display: table;
@@ -4982,28 +5054,35 @@ h2 {
 }
 
 .catalog_box__table_row .order_num {
+	font-family: 'InvolveSemibold', 'Arial', serif;
+	font-size: 18px;
 	order: 1;
 }
 
-.catalog_box__table_row .row_date {
-	text-align: right;
+.catalog_box__table_row .my-order_actions,
+.catalog_box__table_row .to-pay-block {
 	order: 2;
+	justify-content: flex-end;
+}
+
+.catalog_box__table_row .row_date {
+	order: 3;
 }
 
 .catalog_box__table_row .row_name {
 	width: 100%;
 	margin-bottom: 20px;
-	order: 3;
+	order: 4;
 }
 
 .catalog_box__table_row .status {
 	width: 50%;
-	order: 4;
+	order: 5;
 }
 
 .catalog_box__table_row .more {
 	width: 50%;
-	order: 5;
+	order: 6;
 }
 
 .white_container .action_box {

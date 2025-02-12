@@ -1,0 +1,44 @@
+.row_topay {
+  .to-pay-block {
+    width: 120px;
+    font-size: 14px;
+    text-decoration: underline;
+    color: #f95e71;
+  }
+}
+
+.row_cancelled {
+  .my-order_actions {
+    visibility: hidden;
+  }
+}
+
+.my-order_actions {
+  display: flex;
+  align-items: center;
+  width: 120px;
+    .mo_action {
+      margin-right: 20px;
+      span {
+        font-size: 20px;
+        &:before {
+          color: $color-blue;
+        }
+      }
+        &:last-child {
+          margin-right: 0;
+        }
+    }
+}
+
+.wait-payment {
+  background-color: #f95e71;
+  font-size: 11px;
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 6px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

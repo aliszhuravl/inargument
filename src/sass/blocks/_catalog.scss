@@ -53,11 +53,14 @@
       .status {
         width: 150px;
       }
+      .download {
+        width: 120px;
+        opacity: 0;
+      }
       .more {
         width: 150px;
         text-align: right;
         opacity: 0;
-
       }
     }
     &_row {
@@ -107,6 +110,7 @@
 }
 
 .more_btn {
+  padding: 10px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -181,7 +185,7 @@
 .cancelled {
   font-size: 11px;
   color: #fff;
-  background-color: #F95E71;
+  background-color: $color-gray-50;
   padding: 4px 12px;
   border-radius: 6px;
   width: 100px;
@@ -215,22 +219,27 @@
       }
       .order_num {
         order: 1;
+        font-family: $font-family_semibold;
+        font-size: 18px;
+      }
+      .my-order_actions, .to-pay-block {
+        order: 2;
+        justify-content: flex-end;
       }
       .row_date {
-        order: 2;
-        text-align: right;
+        order: 3;
       }
       .row_name {
         width: 100%;
-        order: 3;
+        order: 4;
         margin-bottom: 20px;
       }
       .status {
-        order: 4;
+        order: 5;
         width: 50%;
       }
       .more {
-        order: 5;
+        order: 6;
         width: 50%;
       }
   }
