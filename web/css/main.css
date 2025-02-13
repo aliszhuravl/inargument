@@ -633,7 +633,7 @@ h3,
 }
 
 .header__inner_profile {
-	display: none;
+	display: flex;
 	margin-left: 20px;
 	align-items: center;
 }

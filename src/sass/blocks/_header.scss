@@ -11,11 +11,10 @@
   padding: 12px 0;
 
 
-  // ВКЛЮЧИ ВИДИМОСТЬ КОГДА ДОБЕРЕШЬСЯ ДО ПРОФИЛЯ
+
   &_profile {
-    display: none;
+    display: flex;
     margin-left: 20px;
-    //display: flex;
     align-items: center;
       .my_orders {
         margin-right: 20px;
