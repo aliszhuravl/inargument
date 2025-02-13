@@ -93,3 +93,12 @@
 
 //стили ошибки
 
+.invalid,
+.invalid input,
+.invalid textarea,
+.invalid .form__checkbox_indicator,
+.invalid a,
+.enter_box__btns .left label.invalid p {
+  color: #ff9a79;
+  border-color: #ff9a79;
+}
