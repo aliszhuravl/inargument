@@ -29,15 +29,19 @@
           &__services {
             width: 100%;
             display: flex;
+            flex-wrap: wrap;
             &_item  {
               margin-right: 12px;
+              margin-bottom: 12px;
+              width: fit-content;
+              width: -moz-fit-content;
               border-radius: 12px;
               display: flex;
               justify-content: space-between;
               align-items: center;
               background-color: #6B7AC7;
               padding: 5px 20px;
-              height: 48px;
+              height: auto;
               color: #fff;
               text-decoration: none;
               p {
