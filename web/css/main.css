@@ -957,11 +957,6 @@ h3,
 	background-color: #f5f7f9;
 }
 
-.form__item:invalid {
-	color: #ff9a79;
-	border-color: #ff9a79;
-}
-
 .form__item::-webkit-input-placeholder {
 	-webkit-transition: color .3s;
 	transition: color .3s;
@@ -1067,6 +1062,16 @@ h3,
 .form__textarea_custom:focus {
 	border-color: transparent;
 	outline: 0;
+}
+
+.invalid,
+.invalid input,
+.invalid textarea,
+.invalid .form__checkbox_indicator,
+.invalid a,
+.enter_box__btns .left label.invalid p {
+	color: #ff9a79;
+	border-color: #ff9a79;
 }
 
 /* fuck ie */
@@ -1404,16 +1409,6 @@ h3,
 .form__checkbox > input:disabled ~ .form__checkbox_text {
 	cursor: default;
 	color: #747880;
-}
-
-.invalid,
-.invalid input,
-.invalid textarea,
-.invalid .form__checkbox_indicator,
-.invalid a,
-.enter_box__btns .left label.invalid p {
-	color: #ff9a79;
-	border-color: #ff9a79;
 }
 
 .hero_block.hero_subpage {

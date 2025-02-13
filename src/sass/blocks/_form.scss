@@ -22,11 +22,6 @@
     cursor: default;
   }
 
-  &:invalid {
-    border-color: $color-peach; // TODO: не забыть про валидацию
-    color: $color-peach;
-  }
-
   &::-webkit-input-placeholder {color: #B0B0B0; transition: color .3s;}
   &::-moz-placeholder          {color: #B0B0B0; transition: color .3s;}
 
@@ -104,4 +99,14 @@
     outline: 0;
     border-color: transparent;
   }
+}
+
+.invalid,
+.invalid input,
+.invalid textarea,
+.invalid .form__checkbox_indicator,
+.invalid a,
+.enter_box__btns .left label.invalid p {
+  color: #ff9a79;
+  border-color: #ff9a79;
 }
