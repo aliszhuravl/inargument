@@ -2084,6 +2084,11 @@ h3,
 	background-color: #3f53ba;
 }
 
+.more_menu__item:hover a.link,
+.more_menu__item:hover a.nav__link {
+	color: #fff;
+}
+
 .more_menu__item:hover p.red {
 	color: #fff;
 }
