@@ -72,6 +72,14 @@
     }
 }
 
+.enter_box__body_container {
+  flex-direction: column;
+    .left, .right {
+      margin-right: 0;
+      width: 100%;
+    }
+}
+
 .second {
   &:after {
     width: 37%;

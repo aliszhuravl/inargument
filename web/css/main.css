@@ -2629,6 +2629,16 @@ h3,
 	color: #3f53ba;
 }
 
+.enter_box__body_container {
+	flex-direction: column;
+}
+
+.enter_box__body_container .left,
+.enter_box__body_container .right {
+	width: 100%;
+	margin-right: 0;
+}
+
 .second:after {
 	width: 37%;
 }
