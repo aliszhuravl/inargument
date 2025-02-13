@@ -10,7 +10,12 @@
   justify-content: space-between;
   padding: 12px 0;
 
-
+  .header__inner_about {
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 
   &_profile {
     display: flex;

@@ -632,6 +632,14 @@ h3,
 	justify-content: space-between;
 }
 
+.header__inner .header__inner_about {
+	margin-right: 20px;
+}
+
+.header__inner .header__inner_about:last-child {
+	margin-right: 0;
+}
+
 .header__inner_profile {
 	display: flex;
 	margin-left: 20px;
