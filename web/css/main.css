@@ -1135,17 +1135,6 @@ h3,
 	margin-left: 12px;
 }
 
-.non_active {
-	cursor: default;
-	text-decoration: none;
-	opacity: .6;
-	color: #363636 !important;
-}
-
-.non_active:hover {
-	color: #363636;
-}
-
 .layout-inner,
 .header__inner,
 .page__inner,
@@ -1948,18 +1937,18 @@ h3,
 }
 
 .catalog_box__table_top .order_num {
-	width: 150px;
+	width: 80px;
 }
 
 .catalog_box__table_top .row_name {
-	width: 300px;
+	width: 500px;
 }
 
 .catalog_box__table_top .row_date {
-	width: 200px;
+	width: 100px;
 }
 
-.catalog_box__table_top .status {
+.catalog_box__table_top .status_box {
 	width: 150px;
 }
 
@@ -1991,11 +1980,11 @@ h3,
 }
 
 .catalog_box__table_row .order_num {
-	width: 150px;
+	width: 80px;
 }
 
 .catalog_box__table_row .row_name {
-	width: 300px;
+	width: 500px;
 	text-decoration: none;
 	color: #3f53ba;
 }
@@ -2005,10 +1994,10 @@ h3,
 }
 
 .catalog_box__table_row .row_date {
-	width: 200px;
+	width: 100px;
 }
 
-.catalog_box__table_row .status {
+.catalog_box__table_row .status_box {
 	width: 150px;
 }
 
@@ -2097,38 +2086,13 @@ h3,
 	opacity: 1;
 }
 
-.in_progress {
+.status {
 	font-size: 11px;
 	display: flex;
 	width: 100px;
 	padding: 4px 12px;
 	color: #fff;
 	border-radius: 6px;
-	background-color: #02aeff;
-	align-items: center;
-	justify-content: center;
-}
-
-.cancelled {
-	font-size: 11px;
-	display: flex;
-	width: 100px;
-	padding: 4px 12px;
-	color: #fff;
-	border-radius: 6px;
-	background-color: #747880;
-	align-items: center;
-	justify-content: center;
-}
-
-.done {
-	font-size: 11px;
-	display: flex;
-	width: 100px;
-	padding: 4px 12px;
-	color: #fff;
-	border-radius: 6px;
-	background-color: #54c983;
 	align-items: center;
 	justify-content: center;
 }
@@ -4711,6 +4675,29 @@ h3,
 	white-space: nowrap;
 }
 
+.row_cancelled .row_name {
+	cursor: default;
+	text-decoration: none;
+	opacity: .6;
+	color: #363636 !important;
+}
+
+.row_cancelled .row_name:hover {
+	color: #363636;
+}
+
+.row_cancelled .my-order_actions {
+	visibility: hidden;
+}
+
+.row_cancelled .status {
+	background-color: #747880;
+}
+
+.row_inprogress .status {
+	background-color: #02aeff;
+}
+
 .row_topay .to-pay-block {
 	font-size: 14px;
 	width: 120px;
@@ -4718,8 +4705,12 @@ h3,
 	color: #f95e71;
 }
 
-.row_cancelled .my-order_actions {
-	visibility: hidden;
+.row_topay .status {
+	background-color: #f95e71;
+}
+
+.row_done .status {
+	background-color: #54c983;
 }
 
 .my-order_actions {
@@ -4742,18 +4733,6 @@ h3,
 
 .my-order_actions .mo_action:last-child {
 	margin-right: 0;
-}
-
-.wait-payment {
-	font-size: 11px;
-	display: flex;
-	width: 100px;
-	padding: 4px 12px;
-	color: #fff;
-	border-radius: 6px;
-	background-color: #f95e71;
-	align-items: center;
-	justify-content: center;
 }
 
 .clearfix:before,
@@ -5106,7 +5085,7 @@ h2 {
 	order: 4;
 }
 
-.catalog_box__table_row .status {
+.catalog_box__table_row .status_box {
 	width: 50%;
 	order: 5;
 }

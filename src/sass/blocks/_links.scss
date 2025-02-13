@@ -44,13 +44,3 @@
     font-size: 12px;
   }
 }
-
-.non_active {
-  color: $color-black !important;
-  opacity: 0.6;
-  cursor: default;
-  text-decoration: none;
-    &:hover {
-      color: $color-black;
-    }
-}
