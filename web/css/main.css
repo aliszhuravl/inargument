@@ -2832,7 +2832,6 @@ h3,
 	display: block;
 	overflow-y: hidden;
 	width: 100%;
-	max-height: 500px;
 }
 
 .preview__container img {
@@ -5703,10 +5702,6 @@ h3,
 
 .tile_title {
 	line-height: 20px;
-}
-
-.preview__container {
-	max-height: 300px;
 }
 
 .form_box__container .hint_box .hint {
