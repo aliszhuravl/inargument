@@ -26,9 +26,9 @@
   left: 0;
   width: 16px;
   height: 16px;
-  border: 1px solid $color-gray-50;
+  border: 1px solid $color-blue;
   border-radius: 3px;
-  background: $color-white;
+  background: transparent;
   transition: all .1s;
 
   &:after {
